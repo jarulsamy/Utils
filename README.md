@@ -1,4 +1,10 @@
-# Python-Template
+# Utils
+
+A handful of useful, most of the time one-off, scripts.
+Probably a mixture of Python and Bash.
+
+-   [count](count.py): A command-line tool to recursively count the number of files in a directory.
+-   [uppercase](uppercase.py): A command-line tool to recursively capitalize all files in a directory. Use with CAUTION.
 
 ## Support
 
