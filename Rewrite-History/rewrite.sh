@@ -1,5 +1,5 @@
 #!/bin/bash
-# This doesn't work. Reevaluate how export works within scripts
+# Don't run this script directly, source it :)
 
 yesterday="$(date +'%F %T' --date=yesterday)"
 
