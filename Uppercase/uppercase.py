@@ -3,7 +3,7 @@ import shutil
 from pathlib import Path
 
 
-def capitalize_filename(path: Path):
+def capitalize_filename(path: Path) -> Path:
     filename = str(path.name).title()
     new_path = Path(path.parent, filename)
     return new_path
