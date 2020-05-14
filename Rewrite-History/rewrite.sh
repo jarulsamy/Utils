@@ -1,4 +1,5 @@
 #!/bin/bash
+# Don't run this script directly, source it :)
 
 yesterday="$(date +'%F %T' --date=yesterday)"
 
