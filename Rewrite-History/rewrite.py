@@ -13,7 +13,7 @@ ap.add_argument(
     "--timestamp",
     required=False,
     help="An optional custom timestamp.",
-    default="yesterday"
+    default="yesterday",
 )
 
 args = vars(ap.parse_args())
