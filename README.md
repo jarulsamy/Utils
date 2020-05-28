@@ -5,8 +5,8 @@ Probably a mixture of Python and Bash.
 
 -   [count](Count/count.py): A command-line tool to recursively count the number of files in a directory.
 -   [uppercase](Uppercase/uppercase.py): A command-line tool to recursively capitalize all files in a directory. Use with CAUTION.
--   [Rewrite-History](Rewrite-history/rewrite.sh): A command-line tool to set commit dates to yesterday. Git is so beautiful, you can rewrite history.
--   [Argprase](Argparse/argparse.py): A sample of commonly used argparse options.
+-   [Rewrite-History](Rewrite-history): A command-line tool to set commit dates to yesterday. Git is so beautiful, you can rewrite history.
+-   [Argparse](Argparse/argparse.py): A sample of commonly used argparse options.
 -   [Spinner](Spinner/spinner.py): A simple automatic spinner to show process activity with threading.
 -   [Debug](Debug/debug.py): A demo of using the debug dunder method in python.
 
