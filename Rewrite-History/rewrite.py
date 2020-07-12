@@ -3,20 +3,27 @@
 import argparse
 import os
 from datetime import datetime
-from datetime import date
 from datetime import timedelta
+from pathlib import Path
 
 ap = argparse.ArgumentParser()
 
 ap.add_argument(
-    "-t",
-    "--timestamp",
-    required=False,
-    help="An optional custom timestamp.",
-    default="yesterday",
+    "-t", "--timestamp", required=False, help="Custom timestamp.", default="yesterday",
 )
-
+ap.add_argument(
+    "-s", "--shell", required=False, help="Custom shell", default="/bin/zsh",
+)
+ap.add_argument(
+    "-c", "--color", required=False, action="store_true", help="Enable color shell",
+)
 args = vars(ap.parse_args())
+
+args["shell"] = Path(args["shell"])
+if not args["shell"].exists:
+    raise OSError("Shell doesn't exist")
+if not args["color"]:
+    os.environ["TERM"] = "xterm-mono"
 
 ENV_VARS = ["GIT_COMMITTER_DATE", "GIT_AUTHOR_DATE"]
 
@@ -35,10 +42,10 @@ date_time = f"{datetime.strftime(date_, '%Y-%m-%d')} {time}"
 for i in ENV_VARS:
     os.environ[i] = date_time
 
-print("Dropping you into a bash session.")
+print("Dropping you into a new shell session.")
 print("Use exit to leave and unset the GIT variables.")
 
 for i in ENV_VARS:
     os.system(f"echo {i}: ${i}")
 
-os.system("/bin/bash")
+os.system(args["shell"])
