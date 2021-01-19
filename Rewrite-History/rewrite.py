@@ -2,20 +2,31 @@
 
 import argparse
 import os
-from datetime import datetime
-from datetime import timedelta
+from datetime import datetime, timedelta
 from pathlib import Path
 
 ap = argparse.ArgumentParser()
 
 ap.add_argument(
-    "-t", "--timestamp", required=False, help="Custom timestamp.", default="yesterday",
+    "-t",
+    "--timestamp",
+    required=False,
+    help="Custom timestamp.",
+    default="yesterday",
 )
 ap.add_argument(
-    "-s", "--shell", required=False, help="Custom shell", default="/bin/zsh",
+    "-s",
+    "--shell",
+    required=False,
+    help="Custom shell",
+    default="/bin/zsh",
 )
 ap.add_argument(
-    "-c", "--color", required=False, action="store_true", help="Enable color shell",
+    "-c",
+    "--color",
+    required=False,
+    action="store_true",
+    help="Enable color shell",
 )
 args = vars(ap.parse_args())
 
