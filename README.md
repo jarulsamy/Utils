@@ -1,20 +1,25 @@
 # Utils
 
-A handful of useful, most of the time one-off, scripts.
-Probably a mixture of Python and Bash.
+A handful of useful, most of the time one-off, scripts. Probably a mixture of
+Python and Bash.
 
--   [count](Count/count.py): A command-line tool to recursively count the number of files in a directory.
--   [uppercase](Uppercase/uppercase.py): A command-line tool to recursively capitalize all files in a directory. Use with CAUTION.
--   [Rewrite-History](Rewrite-history): A command-line tool to set commit dates to yesterday. Git is so beautiful, you can rewrite history.
--   [Argparse](Argparse/argparse.py): A sample of commonly used argparse options.
--   [Spinner](Spinner/spinner.py): A simple automatic spinner to show process activity with threading.
--   [Debug](Debug/debug.py): A demo of debug tools for C++ and Python.
+## CLI Tools
 
-## Support
+-   [count](Count/count.py): A CLI tool to recursively count the number of files
+    in a directory.
+-   [uppercase](Uppercase/uppercase.py): A CLI tool to recursively capitalize
+    all files in a directory.
 
-Reach out to me at one of the following places!
+## Programming
 
--   Email (Best) at joshua.gf.arul@gmail.com
--   Twitter at <a href="http://twitter.com/jarulsamy_" target="_blank">`@jarulsamy_`</a>
+-   [Rewrite-History](Rewrite-history): A CLI tool to set commit dates to
+    yesterday. Git is so beautiful, you can rewrite history.
+-   [Argparse](Argparse/argparse.py): A sample of commonly used argparse
+    options.
+-   [Spinner](Spinner/spinner.py): A simple automatic spinner to show process
+    activity with threading in Python.
+-   [Debug](Debug/): A demo of debug tools for C++ and Python.
 
-* * *
+## Emacs
+
+- [org/cal.py](org/cal.py): Convert iCal entries to Org Mode TODO items.
